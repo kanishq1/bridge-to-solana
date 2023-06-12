@@ -1,10 +1,24 @@
 import WormholeBridge from "@wormhole-foundation/wormhole-connect";
-import React from "react";
+import Script from "next/script";
+import React, { useEffect } from "react";
+
+const config = {
+    bridgeDefaults: {
+        requiredNetwork: "solana",
+        toNetwork: "solana",
+    },
+    env: "mainnet",
+    customTheme: {
+        background: {
+            default: "#121615",
+        },
+    },
+};
 
 export default function Transfer() {
     return (
-        <>
-            <WormholeBridge />
-        </>
+        <div className="h-screen">
+            <WormholeBridge config={config} />
+        </div>
     );
 }
