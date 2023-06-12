@@ -7,7 +7,7 @@ const config = {
         requiredNetwork: "solana",
         toNetwork: "solana",
     },
-    env: "mainnet",
+    env: "testnet",
     customTheme: {
         background: {
             default: "#121615",
