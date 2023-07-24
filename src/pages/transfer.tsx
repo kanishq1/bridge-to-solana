@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import Script from "next/script";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 type MayanWidgetChainName = "solana" | "ethereum" | "bsc" | "polygon" | "avalanche" | "arbitrum" | "aptos";
 
@@ -63,7 +65,7 @@ declare global {
         };
     }
 }
-export default function Onboarding() {
+export default function Transfer() {
     const handleLoadMayanWidget = () => {
         const config: MayanWidgetConfigType = {
             appIdentity: {
@@ -71,24 +73,17 @@ export default function Onboarding() {
                 icon: "./logo.png",
                 uri: "https://myproject.io",
             },
+            colors: {
+                background: "black",
+            },
         };
         window.MayanSwap.init("swap_widget", config);
     };
 
     return (
-        <div
-            style={{
-                width: "100%",
-                minHeight: "100vh",
-                display: "flex",
-                paddingTop: 100,
-                alignItems: "center",
-                justifyContent: "flex-start",
-                flexDirection: "column",
-            }}
-        >
-            <h3>Onboarding Page</h3>
-            <div style={{ margin: 32 }}>
+        <main className={`min-h-screen p-10 md:px-32 px-8 pb-10 bg-gradient`}>
+            <Header />
+            <div className="flex justify-center m-8">
                 <div id="swap_widget" />
             </div>
             <Script
@@ -97,6 +92,7 @@ export default function Onboarding() {
                 crossOrigin="anonymous"
                 onReady={handleLoadMayanWidget}
             />
-        </div>
+            <Footer />
+        </main>
     );
 }

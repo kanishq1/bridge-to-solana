@@ -50,3 +50,10 @@ body {
     max-width: 400px;
     height: 1px;
 }
+
+#MAYAN_SWAP_PV_ROOT {
+    background: transparent !important;
+}
+.bg-gradient {
+    background: linear-gradient(130.38deg, rgb(91 64 156) -58.7%, rgb(0, 1, 2) 98.1%);
+}

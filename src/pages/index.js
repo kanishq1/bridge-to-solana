@@ -5,6 +5,73 @@ import { useState } from "react";
 import { Card } from "../components/card";
 import { StartBridging } from "../components/start-bridging";
 
+const ecosystemCrads = [
+    {
+        name: "Mayan Swap",
+        link: "https://mayanswap.com/",
+        coverImage: "/mayan.png",
+        tags: ["Solana", "Ethereum", "BNB", "Polygon", "Arbitrum", "Avalanche"],
+    },
+    {
+        name: "Portal Token Bridge",
+        link: "https://portal.xyz/",
+        coverImage: "/portal.png",
+        tags: [
+            "Solana",
+            "Aptos",
+            "Algorand",
+            "Arbitrum",
+            "Polygon",
+            "Avalanche",
+            "BNB Chain",
+            "Celo",
+            "Ethereum",
+            "Sui",
+            "Injective",
+            "Optimism",
+            "Near",
+            "Moonbeam",
+        ],
+    },
+    {
+        name: "Allbridge Stablecoin Swap",
+        link: "https://allbridge.io/",
+        coverImage: "/allbridge.png",
+        tags: ["Solana", "Ethereum", "BNB Chain", "Polygon", "Tron", "Arbitrum"],
+    },
+    {
+        name: "Carrier Bridge",
+        link: "https://carrier.fi/",
+        coverImage: "/carrier.png",
+        tags: [
+            "Solana",
+            "Ethereum",
+            "BNB Chain",
+            "Celo",
+            "Arbitrum",
+            "Fantom",
+            "Klaytn",
+            "Moonbeam",
+            "Avalanche",
+            "Polygon",
+            "Acala",
+            "Oasis",
+        ],
+    },
+    {
+        name: "Atlas Stable Swap",
+        link: "https://atlas.money/",
+        coverImage: "/atlas.png",
+        tags: ["Solana", "Ethereum", "Avalanche", "Polygon", "Fantom", "BNB Chain", "Tron"],
+    },
+    {
+        name: "de Swap Bridge",
+        link: "https://deswap.io/",
+        coverImage: "/deswap.png",
+        tags: ["Solana", "Ethereum", "BNB Chain", "Polygon", "Avalanche", "Arbitrum", "Fantom"],
+    },
+];
+
 export default function Home() {
     return (
         <main
@@ -38,15 +105,12 @@ export default function Home() {
                     <p className="text-lg">Swap to and From Solana via the Ecosystem Bridges</p>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 px-4 max-w-5xl mx-auto">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 px-4 max-w-6xl mx-auto">
+                {ecosystemCrads.map(({ coverImage, name, link, tags }, index) => (
+                    <Card key={index} coverImage={coverImage} name={name} link={link} tags={tags} />
+                ))}
             </div>
-            <div className="px-4 max-w-5xl mx-auto sm:mt-24 mt-16 mb-8">
+            <div className="px-4 max-w-6xl mx-auto sm:mt-24 mt-16 mb-8">
                 <StartBridging />
             </div>
             <Footer />
