@@ -25,3 +25,28 @@ body {
     margin: 0 auto !important;
     height: 100vh;
 }
+.css-7nk25y-title {
+    visibility: hidden;
+}
+.css-1leat8z {
+    background: #121615;
+}
+.css-3id0jj-fadeOverlayTop,
+.css-12eqypu-fadeOverlay {
+    background-image: none !important;
+}
+.css-1ixwcgd-container {
+    display: none !important;
+}
+.css-4qv8pm-connectWallet {
+    background-color: #a169f7 !important;
+    color: #121615 !important;
+    border-radius: 4px !important;
+    padding: 0.25rem 1rem !important;
+}
+
+.separator-line {
+    background: radial-gradient(2245710.82% 73.93% at 50% 50.07%, #bebebe 0%, rgba(190, 190, 190, 0) 100%);
+    max-width: 400px;
+    height: 1px;
+}
