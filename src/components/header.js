@@ -11,7 +11,7 @@ const Header = ({ bg }) => {
             )}
         >
             <Head>
-                <meta property="og:image" content="/ogImage.png" />
+                <meta property="og:image" content="/ogImg.png" />
                 <meta property="twitter:image" content="/ogImg.png" />
                 <link rel="icon" href="/logo.png" />
                 <meta property="og:title" content="The Solana Bridge" />
