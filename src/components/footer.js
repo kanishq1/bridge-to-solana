@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="flex justify-between items-center text-[#D8D8D8] bottom-0 max-lg:items-start max-sm:flex-col max-sm:gap-y-6 pt-20 z-10 relative">
+        <div className="flex justify-between items-center text-[#D8D8D8] bottom-0 max-lg:items-start max-sm:flex-col max-sm:gap-y-6 pt-20 z-10 relative mx-5">
             <div className="flex gap-x-4 items-center max-sm:gap-x-2">
                 <p>Powered By</p>
                 <p className="inline-flex items-center">
@@ -18,11 +18,11 @@ const Footer = () => {
                     www.solanatourism.com
                 </a>
                 <p>
-                    Built and Maintained by&nbsp;
+                    Built and maintained by&nbsp;
                     <a className="text-[#e396f9]" href="https://twitter.com/yashhsm" target="_blank">
                         @yashhsm
                     </a>
-                    &nbsp; and&nbsp;
+                    &nbsp;and&nbsp;
                     <a className="text-[#e396f9]" href="https://twitter.com/_kanishq" target="_blank">
                         @_kanishq
                     </a>

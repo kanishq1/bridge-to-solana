@@ -126,6 +126,9 @@ export default function Home() {
                 <div className="px-4 max-w-6xl mx-auto sm:mt-24 mt-16 mb-8 relative">
                     <StartBridging />
                 </div>
+
+                <div class="max-w-xl h-0.5 mt-16 mx-auto bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
+
                 <Footer />
             </main>
         </div>

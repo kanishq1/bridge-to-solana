@@ -7,7 +7,7 @@ export const StartBridging = () => {
                 <h1 className="text-3xl">Start bridging your assets in and out of Solana!</h1>
                 <a
                     href={"/transfer"}
-                    className="bg-[#14F195] hover:bg-white ease-linear delay-50 transition-all text-black rounded-lg py-2 px-4 text-xl uppercase font-medium max-sm:text-center"
+                    className="bg-[#14F195] hover:bg-white ease-linear delay-50 transition-all text-black rounded-lg py-2 px-4 text-xl uppercase font-medium text-center"
                 >
                     Bridge Your Assets
                 </a>
