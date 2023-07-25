@@ -6,7 +6,7 @@ const Header = ({ bg }) => {
     return (
         <div
             className={clsx(
-                "mx-auto border border-gray-600 max-w-7xl flex justify-between sticky top-5 z-10 px-4 py-3 rounded-md bg-opacity-10 bg-blur",
+                "mx-auto border border-gray-600 max-w-7xl flex justify-between sticky top-5 px-4 py-3 rounded-md bg-opacity-10 bg-blur z-20",
                 bg ? bg : "bg-white "
             )}
         >

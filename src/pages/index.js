@@ -86,7 +86,7 @@ export default function Home() {
                 className={`min-h-screen pt-5 md:px-32 px-4 pb-10 bg-[#000] bg-contain bg-no-repeat bg-[url('/heroBg.png')] relative`}
             >
                 <Header />
-                <div className="flex flex-col justify-center items-center text-center xl:w-1/2 lg:w-3/4 mx-auto gap-y-12 pt-32">
+                <div className="flex flex-col justify-center items-center text-center xl:w-1/2 lg:w-3/4 mx-auto gap-y-12 sm:pt-32 pt-24">
                     <h1 className="font-medium text-6xl font-sansation">Bridge between Solana and the world.</h1>
                     <p className="text-white font-light text-xl">
                         The Solana Bridge enables seamless asset transfers between Solana and rest of the chains using
