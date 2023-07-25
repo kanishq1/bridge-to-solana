@@ -13,6 +13,7 @@ const Header = ({ bg }) => {
             <Head>
                 <meta property="og:image" content="/ogImage.png" />
                 <meta property="twitter:image" content="/ogImg.png" />
+                <link rel="icon" href="/logo.png" />
             </Head>
             <div className="flex justify-between items-center w-full max-w-6xl mx-auto">
                 <a href="/" className="flex items-center gap-x-2">
