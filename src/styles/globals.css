@@ -67,10 +67,14 @@ body {
 }
 
 #MAYAN_SWAP_PV_ROOT {
-    background: transparent !important;
+    background: rgba(166, 136, 236, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    width: 450px !important;
+    border: 0.5px solid #a269f75f !important;
 }
 .bg-gradient {
     background: linear-gradient(130.38deg, rgb(91 64 156) -58.7%, rgb(0, 1, 2) 98.1%);
+    background: #000;
 }
 
 .bg-blur {

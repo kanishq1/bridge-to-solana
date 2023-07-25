@@ -1,8 +1,14 @@
 import React from "react";
+import clsx from "clsx";
 
-const Header = () => {
+const Header = ({ bg }) => {
     return (
-        <div className="mx-auto border border-gray-600 max-w-7xl flex justify-between sticky top-5 z-10 px-4 py-3 rounded-md bg-white bg-opacity-10 bg-blur">
+        <div
+            className={clsx(
+                "mx-auto border border-gray-600 max-w-7xl flex justify-between sticky top-5 z-10 px-4 py-3 rounded-md bg-opacity-10 bg-blur",
+                bg ? bg : "bg-white "
+            )}
+        >
             <div className="flex justify-between items-center w-full max-w-6xl mx-auto">
                 <a href="/" className="flex items-center gap-x-2">
                     <img className="h-10" src="/solanaBridgeLogo.svg" />
