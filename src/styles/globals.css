@@ -72,6 +72,12 @@ body {
     width: 450px !important;
     border: 0.5px solid #a269f75f !important;
 }
+/* Phone View */
+@media (max-width: 768px) {
+    #MAYAN_SWAP_PV_ROOT {
+        width: 90vw !important;
+    }
+}
 .bg-gradient {
     background: linear-gradient(130.38deg, rgb(91 64 156) -58.7%, rgb(0, 1, 2) 98.1%);
     background: #000;

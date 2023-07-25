@@ -4,7 +4,7 @@ import { faqs } from "../components/faqs";
 
 export default function Faqs() {
     return (
-        <main className={`min-h-screen p-10 md:px-32 px-8 pb-10 bg-[#000] bg-contain`}>
+        <main className={`min-h-screen p-10 md:px-32 px-4 pb-10 bg-[#000] bg-contain`}>
             <Header />
             <div>
                 <img className="absolute z-0 left-0" src={"/bg-lines.png"} />

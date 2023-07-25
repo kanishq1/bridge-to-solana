@@ -81,12 +81,12 @@ export default function Transfer() {
     };
 
     return (
-        <main className={`min-h-screen p-10 md:px-32 px-8 pb-10 bg-gradient`}>
+        <main className={`min-h-screen p-10 md:px-32 px-4 pb-10 bg-gradient`}>
             <div className="overflow-hidden">
                 <img className="absolute z-0 left-0 w-full max-h-[90vh]" src={"/bg-lines.png"} />
             </div>
             <Header bg={"bg-[#a688ec]"} />
-            <div className="flex justify-center m-8 mt-20 relative">
+            <div className="flex justify-center my-8 sm:mx-8 mx-0 mt-20 relative">
                 <div id="swap_widget" />
             </div>
             <Script

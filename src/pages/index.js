@@ -83,7 +83,7 @@ export default function Home() {
     return (
         <div>
             <main
-                className={`min-h-screen pt-5 md:px-32 px-8 pb-10 bg-[#000] bg-contain bg-no-repeat bg-[url('/heroBg.png')] relative`}
+                className={`min-h-screen pt-5 md:px-32 px-4 pb-10 bg-[#000] bg-contain bg-no-repeat bg-[url('/heroBg.png')] relative`}
             >
                 <Header />
                 <div className="flex flex-col justify-center items-center text-center xl:w-1/2 lg:w-3/4 mx-auto gap-y-12 pt-32">
