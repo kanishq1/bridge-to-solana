@@ -10,7 +10,9 @@ export default function Faqs() {
                 <img className="absolute z-0 left-0" src={"/bg-lines.png"} />
             </div>
             <div className="max-w-4xl my-20 flex flex-col gap-y-12 mx-auto relative z-10">
-                <h1 className="sm:text-5xl text-3xl text-center mb-5 font-semibold">Frequently Asked Questions</h1>
+                <h1 className="sm:text-5xl text-3xl text-center mb-5 font-semibold font-sansation ">
+                    Frequently Asked Questions
+                </h1>
                 {faqs.map(({ question, answer }, index) => (
                     <div className="text-white" key={index}>
                         <h3 className="mb-4 text-xl font-semibold">{question}</h3>

@@ -11,12 +11,14 @@ const Arrow = () => (
 
 export const Card = ({ coverImage, name, link, tags }) => {
     return (
-        <div className="bg-[#131515] p-5 rounded-2xl text-white gap-y-5 flex flex-col font-jakarata">
-            <img src={coverImage} />
+        <div className="bg-[#131515] p-5 rounded-2xl text-white gap-y-5 flex flex-col font-sansation">
+            <div className="rounded-lg overflow-hidden">
+                <img className="hover:scale-125 delay-75 ease-in-out transition-all" src={coverImage} />
+            </div>
             <p>Available Chains</p>
             <div className="flex gap-2 flex-wrap">
                 {tags.map((tag, index) => (
-                    <div key={index} className="bg-[#525252] rounded-sm px-2 py-[1px] text-xs">
+                    <div key={index} className="bg-[#525252] rounded-sm px-2 py-[1px] text-xs font-sansation">
                         {tag}
                     </div>
                 ))}

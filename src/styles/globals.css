@@ -9,6 +9,11 @@
     --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+    font-family: "Sansation";
+    src: url("/fonts/Sansation_Regular.ttf");
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
@@ -25,6 +30,10 @@ body {
 
 .font-jakarata {
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-sansation {
+    font-family: "Sansation";
 }
 
 .css-vjzf4n-appContent {
@@ -62,4 +71,8 @@ body {
 }
 .bg-gradient {
     background: linear-gradient(130.38deg, rgb(91 64 156) -58.7%, rgb(0, 1, 2) 98.1%);
+}
+
+.bg-blur {
+    backdrop-filter: blur(10px);
 }
