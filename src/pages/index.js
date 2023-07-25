@@ -127,7 +127,7 @@ export default function Home() {
                     <StartBridging />
                 </div>
 
-                <div class="max-w-xl h-0.5 mt-16 mx-auto bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
+                <div class="max-w-xl h-0.5 mt-16 mx-auto bg-gradient-to-r from-transparent via-gray-500 to-transparent sm:hidden"></div>
 
                 <Footer />
             </main>
