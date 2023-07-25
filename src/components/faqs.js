@@ -15,8 +15,4 @@ export const faqs = [
         question: "What is Gas on Destination?",
         answer: 'The "Gas on destination” enables users to pay an additional fee on the source chain to request a small amount of native gas on the destination chain. For example, a user bridging USDC from Ethereum to Solana can pay a fee denominated in USDC from their sending wallet to receive some native SOL in their receiving wallet in addition to the USDC they are bridging over.',
     },
-    {
-        question: "Whom to contact for any queries?",
-        answer: "If you have any further questions or require troubleshooting, please reach out to Mayan Finance team or Yash on Twitter.",
-    },
 ];

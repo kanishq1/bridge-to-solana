@@ -11,7 +11,7 @@ const Arrow = () => (
 
 export const Card = ({ coverImage, name, link, tags }) => {
     return (
-        <div className="bg-[#131515] p-5 rounded-2xl text-white gap-y-5 flex flex-col">
+        <div className="bg-[#131515] p-5 rounded-2xl text-white gap-y-5 flex flex-col font-jakarata">
             <img src={coverImage} />
             <p>Available Chains</p>
             <div className="flex gap-2 flex-wrap">

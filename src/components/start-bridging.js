@@ -2,10 +2,12 @@ import React from "react";
 
 export const StartBridging = () => {
     return (
-        <div className="grid sm:grid-cols-2 gap-12">
+        <div className="grid sm:grid-cols-2 gap-12 font-jakarata">
             <div className="flex flex-col justify-between py-1">
                 <h1 className="text-3xl">Start bridging your assets in and out of Solana!</h1>
-                <button className="bg-[#14F195] text-black rounded-lg py-2 px-1 text-xl">Bridge Your Assets</button>
+                <button className="hover:bg-[#14F195] bg-white ease-linear delay-50 transition-all text-black rounded-lg py-2 px-1 text-xl">
+                    Bridge Your Assets
+                </button>
             </div>
             <div className="flex flex-col gap-y-2">
                 <h3 className="">Note</h3>

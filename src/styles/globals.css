@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -19,6 +20,11 @@
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    font-family: "Inter", sans-serif;
+}
+
+.font-jakarata {
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .css-vjzf4n-appContent {

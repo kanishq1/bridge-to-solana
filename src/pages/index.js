@@ -8,13 +8,13 @@ import { StartBridging } from "../components/start-bridging";
 const ecosystemCrads = [
     {
         name: "Mayan Swap",
-        link: "https://mayanswap.com/",
+        link: "https://swap.mayan.finance/",
         coverImage: "/mayan.png",
         tags: ["Solana", "Ethereum", "BNB", "Polygon", "Arbitrum", "Avalanche"],
     },
     {
         name: "Portal Token Bridge",
-        link: "https://portal.xyz/",
+        link: "https://www.portalbridge.com/",
         coverImage: "/portal.png",
         tags: [
             "Solana",
@@ -35,13 +35,13 @@ const ecosystemCrads = [
     },
     {
         name: "Allbridge Stablecoin Swap",
-        link: "https://allbridge.io/",
+        link: "https://core.allbridge.io/?f=ETH&ft=USDC&t=SOL&tt=USDC",
         coverImage: "/allbridge.png",
         tags: ["Solana", "Ethereum", "BNB Chain", "Polygon", "Tron", "Arbitrum"],
     },
     {
         name: "Carrier Bridge",
-        link: "https://carrier.fi/",
+        link: "https://www.carrier.so/",
         coverImage: "/carrier.png",
         tags: [
             "Solana",
@@ -60,13 +60,13 @@ const ecosystemCrads = [
     },
     {
         name: "Atlas Stable Swap",
-        link: "https://atlas.money/",
+        link: "https://app.atlasdex.finance/swap",
         coverImage: "/atlas.png",
         tags: ["Solana", "Ethereum", "Avalanche", "Polygon", "Fantom", "BNB Chain", "Tron"],
     },
     {
         name: "de Swap Bridge",
-        link: "https://deswap.io/",
+        link: "https://app.debridge.finance/deswap",
         coverImage: "/deswap.png",
         tags: ["Solana", "Ethereum", "BNB Chain", "Polygon", "Avalanche", "Arbitrum", "Fantom"],
     },
@@ -79,13 +79,16 @@ export default function Home() {
         >
             <Header />
             <div className="flex flex-col justify-center items-center text-center xl:w-1/2 lg:w-3/4 mx-auto gap-y-12 pt-32">
-                <h1 className="font-semibold text-6xl">Bridge between Solana and the world.</h1>
+                <h1 className="font-medium text-6xl font-jakarata">Bridge between Solana and the world.</h1>
                 <p className="text-[#999A9A] text-lg">
                     The Solana Bridge enables seamless asset transfers between Solana and rest of the chains using
                     Wormhole.
                 </p>
                 <div className="">
-                    <a href="/transfer" className="bg-white text-black py-4 px-16 rounded">
+                    <a
+                        href="/transfer"
+                        className="bg-white text-black py-4 px-16 rounded font-jakarata hover:bg-[#14F195] ease-linear delay-50 transition-all"
+                    >
                         GO TO TRANSFER
                     </a>
                 </div>
@@ -105,12 +108,15 @@ export default function Home() {
                     <p className="text-lg">Swap to and From Solana via the Ecosystem Bridges</p>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 px-4 max-w-6xl mx-auto">
+            <div>
+                <img className="absolute z-0 left-0" src={"/bg-lines.png"} />
+            </div>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 px-4 max-w-6xl mx-auto relative">
                 {ecosystemCrads.map(({ coverImage, name, link, tags }, index) => (
                     <Card key={index} coverImage={coverImage} name={name} link={link} tags={tags} />
                 ))}
             </div>
-            <div className="px-4 max-w-6xl mx-auto sm:mt-24 mt-16 mb-8">
+            <div className="px-4 max-w-6xl mx-auto sm:mt-24 mt-16 mb-8 relative">
                 <StartBridging />
             </div>
             <Footer />

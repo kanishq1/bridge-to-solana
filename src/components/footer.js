@@ -14,10 +14,19 @@ const Footer = () => {
                 <a href="https://www.superteam.fun" target="_blank">
                     www.superteam.fun
                 </a>
-                <a href="www.solanatourism.com" target="_blank">
+                <a href="https://www.solanatourism.com" target="_blank">
                     www.solanatourism.com
                 </a>
-                <p>Built and Maintained by @yashhsm and @kanishq</p>
+                <p>
+                    Built and Maintained by{" "}
+                    <a className="text-[#B131FF]" href="https://twitter.com/yashhsm" target="_blank">
+                        @yashhsm
+                    </a>{" "}
+                    and{" "}
+                    <a className="text-[#B131FF]" href="https://twitter.com/_kanishq" target="_blank">
+                        @_kanishq
+                    </a>
+                </p>
             </div>
         </div>
     );
