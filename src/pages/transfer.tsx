@@ -6,8 +6,6 @@ import Footer from "../components/footer";
 
 type MayanWidgetChainName = "solana" | "ethereum" | "bsc" | "polygon" | "avalanche" | "arbitrum" | "aptos";
 
-// visit the Figma link below to see the color palette
-// https://www.figma.com/community/file/1236300242311853150/Mayan-Widget
 type MayanWidgetColors = {
     N000?: string;
     N100?: string;
