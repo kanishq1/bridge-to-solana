@@ -10,13 +10,6 @@ const Header = ({ bg }) => {
                 bg ? bg : "bg-white "
             )}
         >
-            <Head>
-                <meta property="og:image" content="/ogImg.png" />
-                <meta property="twitter:image" content="/ogImg.png" />
-                <link rel="icon" href="/logo.png" />
-                <meta property="og:title" content="The Solana Bridge" />
-                <title>The Solana Bridge</title>
-            </Head>
             <div className="flex justify-between items-center w-full max-w-6xl mx-auto">
                 <a href="/" className="flex items-center gap-x-2">
                     <img className="h-10" src="/solanaBridgeLogo.svg" />

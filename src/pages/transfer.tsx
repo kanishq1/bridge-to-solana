@@ -74,6 +74,7 @@ export default function Transfer() {
             colors: {
                 background: "black",
             },
+            referrerAddress: "CmkDNFUvzMfbiuQUG8D5cpDdDmutVxbZUTPr6NytJK1B",
         };
         window.MayanSwap.init("swap_widget", config);
     };
