@@ -14,6 +14,11 @@ export default function Document() {
                 <Main />
                 <NextScript />
                 <script src="/main.js" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-27EP50W7EK"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date()); gtag('config', 'G-27EP50W7EK');
+                </script>
             </body>
         </Html>
     );
