@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default function Document() {
     return (
@@ -14,8 +13,8 @@ export default function Document() {
             <body className="bg-[#121615]">
                 <Main />
                 <NextScript />
-                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-27EP50W7EK"></Script>
-                <Script src="/main.js" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-27EP50W7EK"></script>
+                <script src="/main.js" />
             </body>
         </Html>
     );
